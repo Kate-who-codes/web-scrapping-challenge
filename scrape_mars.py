@@ -1,21 +1,19 @@
-# install splinter: is the process the same as in jupyter notebook?
-# ! pip install splinter
+
 
 from splinter import Browser
 import requests
 from bs4 import BeautifulSoup as bs
 from pprint import pprint
 import pandas as pd
-
+from chromedriver import executable_path
 import time
 
 
-def init_browser():
+def scrape_info():
+    # Set up Splinter
     executable_path = {"executable_path" : "chromedriver.exe "}
-    return Browser("chrome", **executable_path, headless=False)
+    browser = Browser("chrome", **executable_path, headless=False)
 
-def scrape():
-    browser = init_browser()
     
     # define url 
     mars_news_url = "https://mars.nasa.gov/news/"
