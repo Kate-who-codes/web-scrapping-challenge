@@ -30,13 +30,13 @@ def scrape_info():
 
     url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
     browser.visit(url)
-
+    time.sleep(8)
     html = browser.html
     soup = bs(html, 'html.parser')
 
-    stuff=soup.find('div',class_='carousel_container')
+    found=soup.find('div',class_='carousel_container')
 
-    image=stuff.a["data-fancybox-href"]
+    #image=stuff.a["data-fancybox-href"]
 
     url="https://www.jpl.nasa.gov/"
 
