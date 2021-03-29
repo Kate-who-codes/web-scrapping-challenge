@@ -11,7 +11,7 @@ The initial scraping is conducted by using Jupyter Notebook, BeautifulSoup, Pand
 
 # NASA Mars News
 I scraped the NASA Mars News Site and collected the latest News Title and Paragraph Text. The result looks as follows:
-![image](https://user-images.githubusercontent.com/68763904/112877500-b0694c00-907b-11eb-8e23-5a724528fe07.png)
+![image](https://user-images.githubusercontent.com/68763904/112879723-63d34000-907e-11eb-96cd-6f027505cc80.png)
 
 # JPL Mars Space Images - Featured Image
 I Visited the url for JPL Featured Space Image here(https://www.jpl.nasa.gov/images?search=&category=Mars), and used splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable called featured_image_url.
